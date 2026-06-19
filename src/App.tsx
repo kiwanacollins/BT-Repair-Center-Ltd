@@ -1,20 +1,33 @@
+import { useState, useEffect } from 'react'
 import InvoicePage from './components/InvoicePage'
 import { Invoice } from './data/types'
 import { initialInvoice } from './data/initialData'
 
-function App() {
-  const savedInvoice = window.localStorage.getItem('invoiceData')
-  let data = null
-
+function loadInvoice(): Invoice {
   try {
-    if (savedInvoice) {
-      // Merge saved data with defaults so newly added fields get their default values
-      data = { ...initialInvoice, ...JSON.parse(savedInvoice) }
-    }
+    const saved = window.localStorage.getItem('invoiceData')
+    if (saved) return { ...initialInvoice, ...JSON.parse(saved) }
   } catch (_e) {}
+  return { ...initialInvoice }
+}
+
+function App() {
+  const [data, setData] = useState<Invoice>(loadInvoice)
+
+  // Sync across tabs
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === 'invoiceData') {
+        setData(loadInvoice())
+      }
+    }
+    window.addEventListener('storage', onStorage)
+    return () => window.removeEventListener('storage', onStorage)
+  }, [])
 
   const onInvoiceUpdated = (invoice: Invoice) => {
     window.localStorage.setItem('invoiceData', JSON.stringify(invoice))
+    setData(invoice)
   }
 
   return (
