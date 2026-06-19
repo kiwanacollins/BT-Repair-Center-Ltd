@@ -13,7 +13,7 @@ export default defineConfig({
       },
       includeAssets: ['favicon.ico', 'bt-prepair-logo.png'],
       manifest: {
-        name: 'BT Repair Centre',
+        name: 'BT Repair Centre Ltd',
         short_name: 'BT Repair',
         description: 'Generate and manage repair receipts and invoices',
         theme_color: '#3674B5',

@@ -213,7 +213,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               className="bold fs-20 blue"
               pdfMode={pdfMode}
             >
-              BT REPAIR CENTRE
+              BT REPAIR CENTRE LTD
             </Text>
 
             {/* Other commented inputs */}

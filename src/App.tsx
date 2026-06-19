@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="center fs-30">BT Repair Centre</h1>
+      <h1 className="center fs-30">BT Repair Centre Ltd</h1>
       <InvoicePage data={data} onChange={onInvoiceUpdated} />
     </div>
   )
