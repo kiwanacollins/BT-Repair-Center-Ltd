@@ -96,35 +96,35 @@ const styles: CSSClasses = {
   },
 
   'mt-40': {
-    marginTop: '40px',
+    marginTop: '16px',
   },
 
   'mt-30': {
-    marginTop: '30px',
+    marginTop: '12px',
   },
 
   'mt-20': {
-    marginTop: '20px',
+    marginTop: '8px',
   },
 
   'mt-10': {
-    marginTop: '10px',
+    marginTop: '5px',
   },
 
   'mb-5': {
-    marginBottom: '5px',
+    marginBottom: '3px',
   },
 
   'p-4-8': {
-    padding: '4px 8px',
+    padding: '2px 6px',
   },
 
   'p-5': {
-    padding: '5px',
+    padding: '3px',
   },
 
   'pb-10': {
-    paddingBottom: '10px',
+    paddingBottom: '5px',
   },
 
   right: {
@@ -136,18 +136,61 @@ const styles: CSSClasses = {
   },
 
   'fs-20': {
-    fontSize: '20px',
+    fontSize: '12px',
   },
 
   'fs-45': {
-    fontSize: '45px',
+    fontSize: '20px',
+  },
+
+  'fs-16': {
+    fontSize: '10px',
+  },
+
+  'fs-12': {
+    fontSize: '8px',
   },
 
   page: {
     fontFamily: 'Nunito',
-    fontSize: '13px',
+    fontSize: '9px',
     color: '#555',
-    padding: '40px 35px',
+    padding: '20px 25px',
+  },
+
+  'mb-10': {
+    marginBottom: '5px',
+  },
+
+  center: {
+    textAlign: 'center',
+  },
+
+  italic: {
+    fontStyle: 'italic',
+  },
+
+  'border-top': {
+    borderTop: '1px solid #000',
+    marginBottom: '4px',
+  },
+
+  'border-box': {
+    border: '2px solid #333',
+    borderRadius: '3px',
+    padding: '6px',
+  },
+
+  'height-60': {
+    height: '40px',
+  },
+
+  'max-width-300': {
+    maxWidth: '200px',
+  },
+
+  'flex-1': {
+    flex: 1,
   },
 
   span: {

@@ -205,7 +205,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
         <View className="flex header-flex" pdfMode={pdfMode}>
           <View className="w-50" pdfMode={pdfMode}>
             {pdfMode ? (
-              <Image src="/bt-prepair-logo.png" style={{ width: '100px' }} />
+              <Image src="/bt-prepair-logo.png" style={{ width: '60px' }} />
             ) : (
               <img src="/bt-prepair-logo.png" alt="BT Repair Logo" style={{ maxWidth: '100px', display: 'block' }} />
             )}
@@ -238,7 +238,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               <View className="w-50 pr-10" pdfMode={pdfMode}>
                 {pdfMode ? (
                   invoice.phoneImage1 ? (
-                    <Image src={invoice.phoneImage1} style={{ width: '100px', maxHeight: '100px' }} />
+                    <Image src={invoice.phoneImage1} style={{ width: '60px', maxHeight: '60px' }} />
                   ) : null
                 ) : (
                   invoice.phoneImage1 ? (
@@ -253,7 +253,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               <View className="w-50" pdfMode={pdfMode}>
                 {pdfMode ? (
                   invoice.phoneImage2 ? (
-                    <Image src={invoice.phoneImage2} style={{ width: '100px', maxHeight: '100px' }} />
+                    <Image src={invoice.phoneImage2} style={{ width: '60px', maxHeight: '60px' }} />
                   ) : null
                 ) : (
                   invoice.phoneImage2 ? (
@@ -548,7 +548,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
             
             <View className="height-60" pdfMode={pdfMode}>
               {pdfMode ? (
-                <Image src="/bt-signature.png" style={{ width: '360px', maxHeight: '360px' }} />
+                <Image src="/bt-signature.png" style={{ width: '160px', maxHeight: '60px' }} />
               ) : (
                 <img src="/bt-signature.png" alt="BT Repair Signature" style={{ maxWidth: '350px', maxHeight: '100px', display: 'block' }} />
               )}
